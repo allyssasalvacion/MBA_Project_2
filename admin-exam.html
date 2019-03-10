@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
-        
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -41,24 +41,40 @@
                </span>
             </div>
         </nav>
-        <div class="title_bar sticky-top">
-            <span class="float-left">MBA: Virtual Learning Environment (Admin)</span>   
-            <button onclick="location.href='login.html';" class="float-right logout-button"><i class="fa fa-sign-out-alt" aria-hidden="true"></i> &nbsp;SIGN OUT</button>
-            <button onclick="location.href='admin.html';" class="float-right logout-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> &nbsp;GO BACK</button>
-        </div>
+
+        <!-- new navbar here -->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark title_bar sticky-top">
+          <a class="navbar-brand admin-title" href="#">MBA: VLE (Admin)</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link admin-title" onclick="location.href='admin.html';">
+                  <i class="fa fa-chevron-left"></i> &nbsp;&nbsp;Go Back
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  admin-title" onclick="location.href='login.html';">
+                  <i class="fa fa-sign-out-alt"></i> &nbsp;&nbsp;Log out</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
 
         <!-- Exam Notice -->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8 text-center">
-                    <p class="font-weight-light current-exams"></p>               
+                    <p class="font-weight-light current-exams"></p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-8 text-center">
-                    <button type="button" class="btn btn-circle btn-xl zoom float-right" data-toggle="modal" data-target="#modalAddExam">
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>                      
+                    <button class="btn float-right btn-2e float-right" data-toggle="modal" data-target="#modalAddExam"><i class="fas fa-plus mr-1"></i> Add An Exam</button>
                 </div>
             </div>
 
@@ -69,18 +85,47 @@
                         <div class="card-body">
                             <h5 class="card-title">First Long Examination</h5>
                             <p class="card-text">You have 30 mins to answer the examination. Once we start the exam, you are not permitted to search the internet. If caught cheating, you will be subject to disciplinary actions or worse will be expelled. Honor Before Excellence!</p>
-                            <button type="button" onclick="location.href='admin-questions.html';" class="btn button float-right">
+                            <button type="button" onclick="location.href='admin-questions.html';" class="btn btn-2e float-right">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </button>
-                            <button type="button" class="btn button float-right" data-toggle="modal" data-target="#modalAddExam">EDIT</button>
+                            <button type="button" class="btn btn-2e float-right" data-toggle="modal" data-target="#modalAddExam">EDIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="card">
+                        <h5 class="card-header h5">BA201 (Economic Analysis)</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">First Long Examination</h5>
+                            <p class="card-text">You have 30 mins to answer the examination. Once we start the exam, you are not permitted to search the internet. If caught cheating, you will be subject to disciplinary actions or worse will be expelled. Honor Before Excellence!</p>
+                            <button type="button" onclick="location.href='admin-questions.html';" class="btn btn-2e float-right">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-2e float-right" data-toggle="modal" data-target="#modalAddExam">EDIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="card">
+                        <h5 class="card-header h5">BA201 (Economic Analysis)</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">First Long Examination</h5>
+                            <p class="card-text">You have 30 mins to answer the examination. Once we start the exam, you are not permitted to search the internet. If caught cheating, you will be subject to disciplinary actions or worse will be expelled. Honor Before Excellence!</p>
+                            <button type="button" onclick="location.href='admin-questions.html';" class="btn btn-2e float-right">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-2e float-right" data-toggle="modal" data-target="#modalAddExam">EDIT</button>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-
-        
 
         <div class="modal fade" id="modalAddExam" tabindex="-1" role="dialog" aria-labelledby=""
         aria-hidden="true">
@@ -115,11 +160,11 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                    <button type="button" class="btn btn-primary btn-sm">Save</button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
    </body>
 </html>
