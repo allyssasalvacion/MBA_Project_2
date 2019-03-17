@@ -1,228 +1,250 @@
 <!DOCTYPE html>
 <html lang="en" class="full-height">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale1">
-        <title>MBA</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="stylesheet" type="text/css" href="admin-questions.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
-        <link href="editor.css" type="text/css" rel="stylesheet"/>
-
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand">
-            <img id="logo" src="logo.png" alt="Logo">
-            </a>
-            <div class="logo" id="navbarText">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                     <div class="logo_name">
-                        <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
-                        <hr>
-                        <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
-                     </div>
-                  </li>
-               </ul>
-               <span class="navbar-text">
-               Masters of Business Administration
-               </span>
-            </div>
-        </nav>
-        <!-- new navbar here -->
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark title_bar sticky-top">
-          <a class="navbar-brand admin-title" href="#">MBA: VLE (Admin)</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item ">
-                <a class="nav-link admin-title" onclick="location.href='admin-exam.html';">
-                  <i class="fa fa-chevron-left"></i> &nbsp;&nbsp;Go Back
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  admin-title" onclick="location.href='login.html';">
-                  <i class="fa fa-sign-out-alt"></i> &nbsp;&nbsp;Log out</a>
-              </li>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale1">
+      <title>MBA</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" type="text/css" href="admin-questions.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+      <link href="editor.css" type="text/css" rel="stylesheet"/>
+      <script src="admin-questions.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg">
+         <a href="#" class="navbar-brand">
+         <img id="logo" src="logo.png" alt="Logo">
+         </a>
+         <div class="logo" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <div class="logo_name">
+                     <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
+                     <hr>
+                     <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
+                  </div>
+               </li>
             </ul>
-          </div>
-        </nav>
-
-        <div class="container">
-            <div class="row justify-content-center top-box">
-                <div class="col-5">
-                    <h3 id="course" class="font-weight-bold"> BA201 (Economic Analysis)</h3>
-                    <h5 id="typeOfExam">First Long Examination</h5>
-                </div>
-                <div class="col-5">
-                    <button class="btn zoom float-right btn-2e" data-toggle="modal" data-target="#addQuestion"><i class="fas fa-plus mr-1"></i> Add A Question</button>
-                </div>
+            <span class="navbar-text">
+            Masters of Business Administration
+            </span>
+         </div>
+      </nav>
+      <!-- new navbar here -->
+      <nav class="mb-1 navbar navbar-expand-lg navbar-dark title_bar sticky-top">
+         <a class="navbar-brand admin-title" href="#">MBA: VLE (Admin)</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item ">
+                  <a class="nav-link admin-title" onclick="location.href='admin-exam.html';">
+                  <i class="fa fa-chevron-left"></i> &nbsp;&nbsp;Go Back
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link  admin-title" onclick="location.href='login.html';">
+                  <i class="fa fa-sign-out-alt"></i> &nbsp;&nbsp;Log out</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="row justify-content-center top-box">
+            <div class="col-5">
+               <h3 id="course" class="font-weight-bold"> BA201 (Economic Analysis)</h3>
+               <h5 id="typeOfExam">First Long Examination</h5>
             </div>
-            <div class="row justify-content-center question-box">
-              <div class="col-10">
-                  <p id="question" class="font-weight-bold text-justify float-left question">
-                      1. Let y be the distance between the point P and the point O on the screen.
-                      Find a relation between the distance y , the wavelength, the distance between the slits d ,
-                      and the distance to the screen D such that a constructive interference pattern will occur at
-                      the point P.
-                  </p>
-              </div>
-              <div class="col-10">
-                <div class="text-center image">
+            <div class="col-5">
+               <button class="btn zoom float-right btn-2e" data-toggle="modal" data-target="#addQuestion"><i class="fas fa-plus mr-1"></i> Add A Question</button>
+            </div>
+         </div>
+         <div class="row justify-content-center question-box">
+            <div class="col-10">
+               <p id="question" class="font-weight-bold text-justify float-left question">
+                  1. Let y be the distance between the point P and the point O on the screen.
+                  Find a relation between the distance y , the wavelength, the distance between the slits d ,
+                  and the distance to the screen D such that a constructive interference pattern will occur at
+                  the point P.
+               </p>
+            </div>
+            <div class="col-10">
+               <div class="text-center image">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sine_wavelength.svg/1200px-Sine_wavelength.svg.png" class="rounded img-fluid" alt="placeholder">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sine_wavelength.svg/1200px-Sine_wavelength.svg.png" class="rounded img-fluid" alt="placeholder">
-                </div>
-              </div>
-              <div class="col-10">
-                <p class="answer-title font-weight-bold">Answer:</p>
-              </div>
-              <div class="col-10 answer-box">
-                <div class="custom-control custom-radio">
+               </div>
+            </div>
+            <div class="col-10">
+               <p class="answer-title font-weight-bold">Answer:</p>
+            </div>
+            <div class="col-10 answer-box">
+               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked>
                   <label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
-                </div>
-                <div class="custom-control custom-radio">
+               </div>
+               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
                   <label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
-                </div>
-                <div class="custom-control custom-radio">
+               </div>
+               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios">
                   <label class="custom-control-label" for="defaultGroupExample4">Option 3</label>
-                </div>
-                <div class="custom-control custom-radio">
+               </div>
+               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="defaultGroupExample5" name="groupOfDefaultRadios">
                   <label class="custom-control-label" for="defaultGroupExample5">Option 4</label>
-                </div>
-                <div class="custom-control custom-radio">
+               </div>
+               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
                   <label class="custom-control-label" for="defaultGroupExample3">Option 5</label>
-                </div>
-                  <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
-              </div>
+               </div>
+               <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
             </div>
-            <div class="row justify-content-center question-box">
-              <div class="col-10">
-                  <p id="question" class="font-weight-bold text-justify float-left question">
-                      2. Let y be the distance between the point P and the point O on the screen.
-                      Find a relation between the distance y , the wavelength, the distance between the slits d ,
-                      and the distance to the screen D such that a constructive interference pattern will occur at
-                      the point P.
-                  </p>
-              </div>
-              <div class="col-10">
-                <div class="text-center image">
+         </div>
+         <div class="row justify-content-center question-box">
+            <div class="col-10">
+               <p id="question" class="font-weight-bold text-justify float-left question">
+                  2. Let y be the distance between the point P and the point O on the screen.
+                  Find a relation between the distance y , the wavelength, the distance between the slits d ,
+                  and the distance to the screen D such that a constructive interference pattern will occur at
+                  the point P.
+               </p>
+            </div>
+            <div class="col-10">
+               <div class="text-center image">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sine_wavelength.svg/1200px-Sine_wavelength.svg.png" class="rounded" alt="placeholder">
-                </div>
-              </div>
-              <div class="col-10">
-                <p class="answer-title font-weight-bold">Answer:</p>
-              </div>
-              <div class="col-10 answer-box">
-                  <input class="form-control" value="This is the answer" type="text" placeholder="">
-                  <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
-              </div>
+               </div>
             </div>
-            <div class="row justify-content-center question-box">
-              <div class="col-10">
-                  <p id="question" class="font-weight-bold text-justify float-left question">
-                      3. Let y be the distance between the point P and the point O on the screen.
-                      Find a relation between the distance y , the wavelength, the distance between the slits d ,
-                      and the distance to the screen D such that a constructive interference pattern will occur at
-                      the point P.
-                  </p>
-              </div>
-              <div class="col-10">
-                <p class="answer-title font-weight-bold">Answer:</p>
-              </div>
-              <div class="col-10 answer-box">
-                <div class="custom-control custom-checkbox">
+            <div class="col-10">
+               <p class="answer-title font-weight-bold">Answer:</p>
+            </div>
+            <div class="col-10 answer-box">
+               <input class="form-control" value="This is the answer" type="text" placeholder="">
+               <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
+            </div>
+         </div>
+         <div class="row justify-content-center question-box">
+            <div class="col-10">
+               <p id="question" class="font-weight-bold text-justify float-left question">
+                  3. Let y be the distance between the point P and the point O on the screen.
+                  Find a relation between the distance y , the wavelength, the distance between the slits d ,
+                  and the distance to the screen D such that a constructive interference pattern will occur at
+                  the point P.
+               </p>
+            </div>
+            <div class="col-10">
+               <p class="answer-title font-weight-bold">Answer:</p>
+            </div>
+            <div class="col-10 answer-box">
+               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultChecked1" checked>
                   <label class="custom-control-label" for="defaultChecked1">Option 1</label>
-                </div>
-                <div class="custom-control custom-checkbox">
+               </div>
+               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultChecked2">
                   <label class="custom-control-label" for="defaultChecked2">Option 2</label>
-                </div>
-                <div class="custom-control custom-checkbox">
+               </div>
+               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultChecked3" checked>
                   <label class="custom-control-label" for="defaultChecked3">Option 3</label>
-                </div>
-                <div class="custom-control custom-checkbox">
+               </div>
+               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultChecked4">
                   <label class="custom-control-label" for="defaultChecked4">Option 4</label>
-                </div>
-                <div class="custom-control custom-checkbox">
+               </div>
+               <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultChecked5">
                   <label class="custom-control-label" for="defaultChecked5">Option 5</label>
-                </div>
-                  <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
-              </div>
+               </div>
+               <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
             </div>
-            <div class="row justify-content-center question-box">
-              <div class="col-10">
-                  <p id="question" class="font-weight-bold text-justify float-left question">
-                      4. Let y be the distance between the point P and the point O on the screen.
-                      Find a relation between the distance y , the wavelength, the distance between the slits d ,
-                      and the distance to the screen D such that a constructive interference pattern will occur at
-                      the point P.
-                  </p>
-              </div>
-              <div class="col-10">
-                <div class="text-center image">
+         </div>
+         <div class="row justify-content-center question-box">
+            <div class="col-10">
+               <p id="question" class="font-weight-bold text-justify float-left question">
+                  4. Let y be the distance between the point P and the point O on the screen.
+                  Find a relation between the distance y , the wavelength, the distance between the slits d ,
+                  and the distance to the screen D such that a constructive interference pattern will occur at
+                  the point P.
+               </p>
+            </div>
+            <div class="col-10">
+               <div class="text-center image">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sine_wavelength.svg/1200px-Sine_wavelength.svg.png" class="rounded" alt="placeholder">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sine_wavelength.svg/1200px-Sine_wavelength.svg.png" class="rounded" alt="placeholder">
-                </div>
-              </div>
-              <div class="col-10">
-                <p class="answer-title font-weight-bold">Answer:</p>
-              </div>
-              <div class="col-10 answer-box">
-                <div class="form-group green-border-focus">
+               </div>
+            </div>
+            <div class="col-10">
+               <p class="answer-title font-weight-bold">Answer:</p>
+            </div>
+            <div class="col-10 answer-box">
+               <div class="form-group green-border-focus">
                   <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
-                </div>
-                  <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
-              </div>
+               </div>
+               <button type="button" class="btn btn-2e float-right question-button" data-toggle="modal" data-target="#addQuestion">EDIT</button>
             </div>
-        </div>
+         </div>
+      </div>
 
-        <!-- Full Height Modal Right -->
-        <div class="modal fade right" id="addQuestion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-full-height modal-right" role="document">
+
+      <div class="modal fade right" id="addQuestion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-full-height modal-right" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title w-100">New Question</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <div class="modal-header">
+                  <h5 class="modal-title w-100">Question</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-
-              </div>
-              <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
-              </div>
+                  </button>
+               </div>
+               <div class="modal-body" id="modal-body">
+                  <div class="row vertical-center">
+                     <div class="col-12">
+                        <select name="dropdown-admin" class="browser-default custom-select custom-select-md mb-4" id="dropdown-admin">
+                           <option value="0" disabled selected>Add Component</option>
+                           <option value="1">Subquestion</option>
+                           <option value="2">Multiple Choice</option>
+                           <option value="3">Multiple Answers</option>
+                           <option value="4">Identification</option>
+                           <option value="5">Essay</option>
+                        </select>
+                     </div>
+                  </div>
+                  <hr/>
+                  <div class="form-group green-border-focus">
+                     <div class="row vertical-center">
+                        <div class="col-10">
+                           <label for="question-admin-box">Question</label>
+                        </div>
+                        <div class="col-2">
+                           <button type="button" class="close delete" id="delete" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                     </div>
+                     <textarea class="form-control" id="question-admin-box" rows="3"></textarea>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+               </div>
             </div>
-          </div>
-        </div>
-        <!-- Full Height Modal Right -->
-
+         </div>
+      </div>
    </body>
 </html>

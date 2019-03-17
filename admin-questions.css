@@ -1,191 +1,228 @@
 body {
-    background:#E5E5E5;
-    font-family:Roboto, sans-serif;
-    color:#353B48;
-    overflow-x:hidden;
-    padding-bottom:150px;
-    }
+  background:#E5E5E5;
+  font-family:Roboto, sans-serif;
+  color:#353B48;
+  overflow-x: hidden;
+  padding-bottom:150px;
+  }
 
-    .navbar {
-    align-items:center;
-    align-content:center;
-    padding-left:6.45vw!important;
-    padding-right:6.45vw!important;
-    }
+  .modal,
+  .container {
+    overflow-x: hidden;
+  }
 
-    .navbar-brand>img {
-    width:118px;
-    height:45px;
-    margin-top:-.3vw;
-    }
+  .navbar {
+  align-items:center;
+  align-content:center;
+  padding-left:6.45vw!important;
+  padding-right:6.45vw!important;
+  }
 
-    .nav-item>div {
-    text-align:center;
-    }
+  .navbar-brand>img {
+  width:118px;
+  height:45px;
+  margin-top:-.3vw;
+  }
 
-    .logo_name>h6 {
-    color:#7B1113;
-    font-style:normal;
-    font-weight:700;
-    line-height:normal;
-    font-size: 81.3%;
-    margin:0;
-    }
+  .nav-item>div {
+  text-align:center;
+  }
 
-    #college_name {
-    font-size: 75%;
-    letter-spacing:.25em;
-    }
+  .logo_name>h6 {
+  color:#7B1113;
+  font-style:normal;
+  font-weight:700;
+  line-height:normal;
+  font-size: 81.3%;
+  margin:0;
+  }
 
-    .logo_name>hr {
-    margin-top:.2vw;
-    margin-bottom:.2vw;
-    background:#7B1113;
-    }
+  #college_name {
+  font-size: 75%;
+  letter-spacing:.25em;
+  }
 
-    .navbar-text {
-    position:absolute;
-    right:0;
-    width:480px;
-    height:37px;
-    top:8px;
-    margin-right:60px;
-    font-style:normal;
-    font-weight:700;
-    line-height:normal;
-    font-size: 168.7%;
-    color:#7B1113;
-    }
+  .logo_name>hr {
+  margin-top:.2vw;
+  margin-bottom:.2vw;
+  background:#7B1113;
+  }
 
-    .title_bar {
-    background:#1c2a48 !important;
-    font-weight:700 !important;
-    }
+  .navbar-text {
+  position:absolute;
+  right:0;
+  width:480px;
+  height:37px;
+  top:8px;
+  margin-right:60px;
+  font-style:normal;
+  font-weight:700;
+  line-height:normal;
+  font-size: 168.7%;
+  color:#7B1113;
+  }
 
-    .admin-title {
-      color: #fff;
-      margin: -4px 0px;
-    }
+  .modal-header {
+    background: #1c2a48;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .vertical-center {
+    margin-top: 20px !important;
+  }
+
+  #add-option {
+    width: 30px; 
+    background: transparent;
+    border: transparent;
+  }
+
+  .btn-mdb-color {
+    background: transparent !important;
+    color: #1c2a48;
+  }
+
+  .title_bar {
+  background:#1c2a48 !important;
+  font-weight:700 !important;
+  }
+
+  .modal-body {
+    margin: 20px;
+  }
+
+  .admin-title {
+    color: #fff;
+    margin: -4px 0px;
+  }
+
+  hr {
+    margin-top: 0px !important;
+  }
+
+  .modal {
+  overflow-y: auto;
+  }
+
+  .rounded {
+    max-width: 350px !important;
+    margin-right: 10px;
+  }
+
+  .custom-radio {
+    margin-top: 5px;
+  }
+
+  .btn-2e {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .question-button {
+    margin-top: 20px !important;
+  }
+
+  .btn-2e {
+    border-radius: 5px;
+    box-shadow: -6px 0 #ab3c3c;
+    border-radius: 100px !important;
+    background: #4d648d !important;
+    box-shadow: 0 6px #ab3c3c;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+
+  .btn-2e:hover {
+    color: #fff !important;
+    left: -2px;
+  }
+
+  .btn-2e:active {
+    box-shadow: 0 0 #ab3c3c;
+    left: -6px;
+  }
+
+  @media (max-width: 1000px){
+  .navbar-brand {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin-top:.2vw;
+  margin-bottom:.2vw;
+  }
+
+  #course,
+  #typeOfExam,
+  .btn-2e {
+    text-align: center;
+  }
+
+  .logo_name {
+  visibility:hidden;
+  }
+
+  .navbar-text {
+  display:none!important;
+  }
+  }
+
+  .top-box {
+      margin: 40px 0px 0px 0px;
+      background: #dfe3ee;
+      padding: 30px 0px;
+      min-width: 100%;
+      min-height: 100px;
+  }
+
+  .question-box {
+    margin: 10px 0px;
+    background: #f4f4f8;
+    padding: 50px 0px 40px 0px;
+    min-height: 300px;
+  }
 
 
-    .rounded {
-      max-width: 350px !important;
-      margin-right: 10px;
-    }
+  .answer-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 
-    .custom-radio {
-      margin-top: 5px;
-    }
+  .image {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    min-width: 100px;
+  }
 
-    .btn-2e {
-    	border: none;
-    	font-family: inherit;
-    	font-size: inherit;
-    	color: inherit;
-    	background: none;
-    	cursor: pointer;
-    	padding: 25px 80px;
-    	display: inline-block;
-    	margin: 15px 30px;
-    	text-transform: uppercase;
-    	letter-spacing: 1px;
-    	font-weight: 700;
-    	outline: none;
-    	position: relative;
-    	-webkit-transition: all 0.3s;
-    	-moz-transition: all 0.3s;
-    	transition: all 0.3s;
-    }
+  .md-v-line {
+  position: absolute;
+  border-left: 1px solid rgba(0,0,0,.125);
+  height: 50px;
+  top:0px;
+  left:54px;
+  }
 
-    .question-button {
-      margin-top: 20px !important;
-    }
-
-    .btn-2e {
-    	border-radius: 5px;
-    	box-shadow: -6px 0 #ab3c3c;
-      border-radius: 100px !important;
-      background: #4d648d !important;
-      box-shadow: 0 6px #ab3c3c;
-      -webkit-transition: none;
-      -moz-transition: none;
-      transition: none;
-    }
-
-    .btn-2e:hover {
-      color: #fff !important;
-    	left: -2px;
-    }
-
-    .btn-2e:active {
-    	box-shadow: 0 0 #ab3c3c;
-    	left: -6px;
-    }
-
-    @media (max-width: 1000px){
-    .navbar-brand {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    margin-top:.2vw;
-    margin-bottom:.2vw;
-    }
-
-    #course,
-    #typeOfExam,
-    .btn-2e {
-      text-align: center;
-    }
-
-    .logo_name {
-    visibility:hidden;
-    }
-
-    .navbar-text {
-    display:none!important;
-    }
-    }
-
-    .top-box {
-        margin: 40px 0px 0px 0px;
-        background: #dfe3ee;
-        padding: 30px 0px;
-        min-width: 100%;
-        min-height: 100px;
-    }
-
-    .question-box {
-      margin: 10px 0px;
-      background: #f4f4f8;
-      padding: 50px 0px 40px 0px;
-      min-height: 300px;
-    }
-
-
-    .answer-title {
-      margin-top: 0px;
-      margin-bottom: 10px;
-    }
-
-    .image {
-      margin-top: 10px;
-      margin-bottom: 40px;
-      min-width: 100px;
-    }
-
-    .md-v-line {
-    position: absolute;
-    border-left: 1px solid rgba(0,0,0,.125);
-    height: 50px;
-    top:0px;
-    left:54px;
-    }
-
-    .navbar {
-    background-color: transparent;
+  .navbar {
+  background-color: transparent;
 }
 
 .top-nav-collapse {
-    background-color: #4285F4;
+  background-color: #4285F4;
 }
