@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale1">
+        <title>MBA</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="admin-statistics.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+
+		<!-- FOR TABLES -->
+	  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	  <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand">
+            <img id="logo" src="logo.png" alt="Logo">
+            </a>
+            <div class="logo" id="navbarText">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <div class="logo_name">
+                        <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
+                        <hr>
+                        <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
+                     </div>
+                  </li>
+               </ul>
+               <span class="navbar-text">
+               Masters of Business Administration
+               </span>
+            </div>
+        </nav>
+        <!-- new navbar here -->
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark title_bar sticky-top">
+          <a class="navbar-brand admin-title" href="#">MBA: VLE (Admin)</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+            aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link admin-title" onclick="location.href='admin-exam.html';">
+                  <i class="fa fa-chevron-left"></i> &nbsp;&nbsp;Go Back
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  admin-title" onclick="location.href='login.html';">
+                  <i class="fa fa-sign-out-alt"></i> &nbsp;&nbsp;Log out</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+		<!-- STUDENT STATS TABLE -->
+      <div class="container card" style="margin:30px auto; padding: 30px;">
+         <table id="dataTable" class="table table-striped">
+		  <thead>
+			<tr style="align-self: center">
+			<p> STUDENTS </p>
+			</tr>
+			<tr>
+			  <th scope="col">#</th>
+			  <th scope="col">Student</th>
+			  <th scope="col">Date</th>
+			  <th scope="col">Score</th>
+			</tr>
+		  </thead>
+		</table>
+      </div>     
+	  
+	  <!-- QUESTIONS STATS TABLE -->
+	  <div class="container card" style="margin:30px auto; padding: 30px;">
+		<div class="row">
+			<div class="col-md-7" >
+				 <table id="questionTable" class="table table-striped ">
+				  <thead>
+					<tr style="align-self: center">
+						<p> QUESTIONS </p>
+					</tr>
+					<tr>
+					  <th scope="col">#</th>
+					  <th scope="col">Question</th>
+					  <th scope="col">Percentage of Wrong</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  </tbody>
+				</table>
+			</div>
+			<div class="col-md-5" style="margin: auto auto;">
+				<div classstyle="height: auto; width: auto;">
+					  <canvas id="doughnut-chart" style="display: block; height: 350px; width:350px"></canvas>
+				</div>
+			</div>
+		</div>
+      </div>  
+	  <button type="button" id="addRow" class="btn btn-primary">Test Add</button> <!--for testing-->
+
+
+      <!-- SHOULD DO JS TO DYNAMICALLY GENERATE TABLE ENTRY -->
+      <script src="admin-statistics.js"></script>
+   </body>
+</html>
