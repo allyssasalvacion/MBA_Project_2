@@ -1,0 +1,166 @@
+body {
+background:#E5E5E5;
+font-family:Roboto, sans-serif;
+color:#353B48;
+overflow-x:hidden;
+padding-bottom:150px;
+}
+
+.navbar {
+align-items:center;
+align-content:center;
+padding-left:6.45vw!important;
+padding-right:6.45vw!important;
+}
+
+.navbar-brand>img {
+width:118px;
+height:45px;
+margin-top:-.3vw;
+}
+
+.nav-item>div {
+text-align:center;
+}
+
+.logo_name>h6 {
+color:#7B1113;
+font-style:normal;
+font-weight:700;
+line-height:normal;
+font-size: 81.3%;
+margin:0;
+}
+
+#college_name {
+font-size: 75%;
+letter-spacing:.25em;
+}
+
+.logo_name>hr {
+margin-top:.2vw;
+margin-bottom:.2vw;
+background:#7B1113;
+}
+
+.navbar-text {
+position:absolute;
+right:0;
+width:480px;
+height:37px;
+top:8px;
+margin-right:60px;
+font-style:normal;
+font-weight:700;
+line-height:normal;
+font-size: 168.7%;
+color:#7B1113;
+}
+
+.title_bar {
+background:#1c2a48 !important;
+font-weight:700 !important;
+}
+
+.admin-title {
+  color: #fff;
+  margin: -4px 0px;
+}
+
+.btn-2e {
+  border-radius: 5px;
+  box-shadow: -6px 0 #ab3c3c;
+  border-radius: 100px !important;
+  background: #4d648d !important;
+  box-shadow: 0 6px #ab3c3c;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.btn-2e {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-2e:hover {
+  color: #fff !important;
+  left: -2px;
+}
+
+.btn-2e:active {
+  box-shadow: 0 0 #ab3c3c;
+  left: -6px;
+}
+
+@media (max-width: 1000px){
+.navbar-brand {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:.2vw;
+margin-bottom:.2vw;
+}
+
+.logo_name {
+visibility:hidden;
+}
+
+.navbar-text {
+display:none!important;
+}
+
+.button {
+border-radius: 100px !important;
+margin-top: -10px !important;
+background: #4d648d !important;
+}
+
+.button:hover {
+color: #2f3640 !important;
+}
+
+.fa-plus {
+border-radius: 100px !important;
+}
+
+.btn-circle.btn-xl {
+width: 55px;
+height: 55px;
+padding: 6px 12px;
+font-size: 24px;
+line-height: 1.33;
+border-radius: 35px;
+margin-top: 25px;
+background: #4d648d;
+}
+
+.btn-circle.btn-xl:hover {
+color: #fff;
+}
+
+.modal-body {
+    padding: 40px 60px !important;
+}
+
+.force-scroll {
+overflow-y: scroll;
+height: 200px;
+
+}
