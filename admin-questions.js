@@ -1,15 +1,16 @@
 $(document).ready(function(){
+    var index = 1;
     $("#dropdown-admin").change(function(){
         var selected = $(this).children("option:selected").text();
         if (selected === "Subquestion") {
             $("#modal-body").append(
-                '<div class="form-group green-border-focus" id="one">'
+                '<div class="form-group green-border-focus element" id="div_'+ index +'">'
                 +'<div class="row vertical-center">'
                 + '<div class="col-10">'
                 + '<label for="subquestion-admin-box">Subquestion</label>'
                 + '</div>'
                 + '<div class="col-2">'
-                + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+                + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
                 + '<span aria-hidden="true">&times;</span>'
                 + '</button>'
                 + '</div>'
@@ -19,13 +20,13 @@ $(document).ready(function(){
                 );
         } else if (selected === "Multiple Answers") {
             $("#modal-body").append(
-                '<div class="form-group green-border-focus" id="one">'
+                '<div class="form-group green-border-focus" id="div_'+ index +'">'
                 +'<div class="row vertical-center">'
                 + '<div class="col-10">'
                 + '<label for="multiple-answers-admin" id="answer">Answer: </label>'
                 + '</div>'
                 + '<div class="col-2">'
-                + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+                + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
                 + '<span aria-hidden="true">&times;</span>'
                 + '</button>'
                 + '</div>'
@@ -48,13 +49,13 @@ $(document).ready(function(){
             );
         } else if (selected === "Multiple Choice") {
             $("#modal-body").append(
-                '<div class="form-group green-border-focus" id="one">'
+                '<div class="form-group green-border-focus" id="div_'+ index +'">'
                 +'<div class="row vertical-center">'
                 + '<div class="col-10">'
                 + '<label for="multiple-answers-admin" id="answer">Answer: </label>'
                 + '</div>'
                 + '<div class="col-2">'
-                + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+                + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
                 + '<span aria-hidden="true">&times;</span>'
                 + '</button>'
                 + '</div>'
@@ -72,19 +73,19 @@ $(document).ready(function(){
                 // +'<div class="col-2">'
                 // + '<button type="button" class="float-right" id="add-option">'
                 // + '<i class="fas fa-plus"></i>'
-                // + '</button>'
-                // +'</div>'
+                 + '</button>'
+                 +'</div>'
                 + '</div>'
             );
         } else if (selected === "Identification") {
             $("#modal-body").append(
-                '<div class="form-group green-border-focus" id="one">'
+                '<div class="form-group green-border-focus" id="div_'+ index +'">'
             +'<div class="row vertical-center">'
             + '<div class="col-10">'
             + '<label for="subquestion-admin-box">Answer: </label>'
             + '</div>'
             + '<div class="col-2">'
-            + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+            + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
             + '<span aria-hidden="true">&times;</span>'
             + '</button>'
             + '</div>'
@@ -94,13 +95,13 @@ $(document).ready(function(){
             );
         } else if(selected === "Essay") {
             $("#modal-body").append(
-            '<div class="form-group green-border-focus" id="one">'
+            '<div class="form-group green-border-focus" id="div_'+ index +'">'
             +'<div class="row vertical-center">'
             + '<div class="col-10">'
             + '<label for="subquestion-admin-box">Answer: </label>'
             + '</div>'
             + '<div class="col-2">'
-            + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+            + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
             + '<span aria-hidden="true">&times;</span>'
             + '</button>'
             + '</div>'
@@ -109,11 +110,17 @@ $(document).ready(function(){
             + '</div>'
             );
         }
+        index++;
         $("#dropdown-admin").val(0); 
     });
 
-    $(".delete").on("click", function(event) {
-        $("#one").remove();
+    $(document).on('click', '.delete', function() {
+        var id = this.id;
+        var split_id = id.split("_");
+        var deleteindex = split_id[1];
+
+        // Remove <div> with id
+        $("#div_" + deleteindex).remove();
     });
 
     $("#add-option").click(function () {
