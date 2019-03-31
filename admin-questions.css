@@ -226,3 +226,33 @@ body {
 .top-nav-collapse {
   background-color: #4285F4;
 }
+
+.split-screen {
+  padding-left: 100px !important;
+}
+
+.scrollable-screen {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
