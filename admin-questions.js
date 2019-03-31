@@ -111,13 +111,13 @@ $(document).ready(function(){
             );
         } else if(selected === "Image") {
             $("#modal-body").append(
-                '<div class="form-group green-border-focus" id="one">'
+                '<div class="form-group green-border-focus" id="div_'+ index +'">'
                 +'<div class="row vertical-center">'
                 + '<div class="col-10">'
                 + '<label for="subquestion-admin-box">Select Images</label>'
                 + '</div>'
                 + '<div class="col-2">'
-                + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+                + '<button type="button" class="close delete" id="delete_' + index + '" aria-label="Close">'
                 + '<span aria-hidden="true">&times;</span>'
                 + '</button>'
                 + '</div>'
