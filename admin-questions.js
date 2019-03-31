@@ -109,6 +109,25 @@ $(document).ready(function(){
             + '<textarea class="form-control" id="subquestion-admin-box" rows="3"></textarea>' 
             + '</div>'
             );
+        } else if(selected === "Image") {
+            $("#modal-body").append(
+                '<div class="form-group green-border-focus" id="one">'
+                +'<div class="row vertical-center">'
+                + '<div class="col-10">'
+                + '<label for="subquestion-admin-box">Select Images</label>'
+                + '</div>'
+                + '<div class="col-2">'
+                + '<button type="button" class="close delete" id="delete" aria-label="Close">'
+                + '<span aria-hidden="true">&times;</span>'
+                + '</button>'
+                + '</div>'
+                + '</div>'
+                +'<form class="float-left span-browse" action="/action_page.php">'
+                +'<input type="file" name="img" class="input-default-js" multiple>'
+                +'</form>'
+                + '</div>'
+               
+            );
         }
         index++;
         $("#dropdown-admin").val(0); 
